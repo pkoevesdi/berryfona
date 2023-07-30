@@ -20,7 +20,7 @@ First working draft. No further development planned from my side, but pull reque
 1. Instantiate by executing `f = fona()`
 1. execute commands like `f.getReply("AT")` - see source code for more commands
 
-## For SIM80L, maybe others
+## For SIM800L, maybe others
 The module is ready to send SMS when it has sent the URC (Unsolicited Result Code) "SMS Ready". To enable us to receive the first URCs after booting, the auto baud feature must be disabled, i.e. the baud rate must be set to a fixed value. Send the following commands to the module:  
 `AT+IPR=115200` # set baud rate fixed  
 `AT&W` # save this setting to survive boot  
